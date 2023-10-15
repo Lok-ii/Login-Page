@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    box-sizing: border-box;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-color: #d39662;
+    background-image: linear-gradient(203deg,
+            #d39662 45%,
+            #b2507f 79%,
+            #7e397a 100%);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Montserrat", sans-serif;
+}
+
+.userLogin {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.userContent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.userIcon {
+    width: 7rem;
+    height: 7rem;
+    opacity: 0.7;
+    background-color: #e4c3a1;
+    /* border: 1px solid #e4c3a1; */
+    /* opacity: 0.7; */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.userTop {
+    color: #c2956c;
+    font-size: 3.5rem;
+}
+
+.inputDetails {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.userInput,
+.passwordInput {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputIcon,
+.passIcon {
+    background-color: #F0E0D7;
+    width: 8%;
+    height: 2.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user,
+.pass {
+    color: #5B544E;
+}
+
+#username,
+#password {
+    width: 50%;
+    height: 2rem;
+    border: none;
+    outline: none;
+    padding: 0.4rem 0.5rem;
+    background-color: #e4c3a1;
+    opacity: 0.6;
+    font-family: "Montserrat", sans-serif;
+}
+
+.errorName, .errorPass{
+    display: none;
+    width: 60%;
+    color: rgb(255, 0, 0);
+    opacity: 0.8;
+    font-weight: 500;
+    font-size: 0.7rem;
+}
+
+#search-box{
+    width: 30%;
+    height: 2.5rem;
+    border: none;
+    outline: none;
+    padding: 0.4rem 0.5rem;
+    background-color: #e4c3a1;
+    opacity: 0.6;
+    font-family: "Montserrat", sans-serif;
+}
+
+.remNfor{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.checkContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label, .forgot{
+    color: white;
+    font-size: 0.9rem;
+    opacity: 0.6;
+    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+}
+
+#checkbox:checked{
+    border: none;
+    outline: none;
+    accent-color: #5B544E;
+}
+
+.login{
+    border: none;
+    background-color: #DBA59C;
+    color: white;
+    width: 60%;
+    padding: 0.9rem 0;
+    opacity: 0.7;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 0 10px 1px #BD6E8B;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.2rem;
+}
+
+.sortU, .sortP{
+    border: none;
+    background-color: #DBA59C;
+    color: white;
+    width: 30%;
+    padding: 0.9rem 0;
+    opacity: 0.7;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 0 10px 1px #BD6E8B;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.2rem;
+}
+
+.sortP:hover, .sortU:hover, .login:hover{
+    background-color: transparent;
+}
+
+
+
+.userList {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.buttons{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    /* flex-wrap: wrap; */
+}
+
+table {
+    height: 80%;
+    border-spacing: 1;
+    /* border-collapse: collapse; */
+    border-radius: 0.5rem;
+    overflow-y: scroll;
+    width: 100%;
+    position: relative;
+    box-shadow: 0px 5px 10px 1px #BD6E8B;
+}
+
+table td,
+table th {
+    padding-left: 0.5rem;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+}
+
+table thead tr {
+    height: 60px;
+    background: transparent;
+    font-size: 16px;
+    color: white;
+}
+
+table tbody tr {
+    background-color: #e4c3a1;
+    opacity: 0.6;
+    height: 48px;
+    border-bottom: 1px solid #e3f1d5;
+}
+
+table tbody tr:last-child {
+    border: 0;
+}
+
+table td,
+table th {
+    text-align: center;
+}
+
+table tbody tr:hover{
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 768px){
+    body{
+        padding: 2rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 4rem;
+    }
+
+    .userLogin{
+        width: 100%;
+    }
+
+    .userList{
+        width: 100%;
+    }
+
+    .inputIcon, .passIcon{
+        width: 12%;
+        height: 2.8rem;
+    }
+
+    .remNfor{
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .login{
+        width: 70%;
+    }
+    .buttons{
+        flex-direction: column;
+    }
+
+    #search-box{
+        width: 94%;
+    }
+
+    .sortU, .sortP{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1000px){
+    body{
+        height: auto;
+    }
+
+    .userLogin{
+        width: 50%;
+    }
+
+    .userList{
+        padding: 0.5rem;
+    }
+    .sortU, .sortP, #search-box{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1245px) and (max-width: 1300px){
+    .sortU, .sortP, #search-box{
+        width: 100%;
+    }
+}

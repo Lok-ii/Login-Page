@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="userLogin">
+        <div class="userContent">
+            <span class="userIcon">
+                <i class="fa-regular fa-user userTop"></i>
+            </span>
+
+            <div class="inputDetails">
+                <div class="userInput">
+                    <span class="inputIcon"><i class="fa-solid fa-user user"></i></i></span>
+                    <input type="text" id="username" placeholder="Username" minlength="8"/>
+                </div>
+                <span class="errorName"></span>
+                <div class="passwordInput">
+                    <span class="passIcon"><span class="material-symbols-outlined pass"> lock </span></span>
+                    <input type="password" id="password" placeholder="************" minlength="8" maxlength="20"/>
+                </div>
+                <span class="errorPass"></span>
+
+                <div class="remNfor">
+                    <span class="checkContainer">
+                        <input type="checkbox" name="checkbox" id="checkbox" />
+                        <label for="checkbox">Remember me</label>
+                    </span>
+                    <span class="forgot"><i>Forgot Password?</i></span>
+                </div>
+                <button class="login">LOGIN</button>
+            </div>
+        </div>
+    </section>
+    <section class="userList">
+        <div class="buttons">
+            <input type="text" id="search-box" placeholder="Search by UserName or Password">
+            <button class="sortU">Sort by UserName</button>
+            <button class="sortP">Sort by Password</button>
+        </div>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>UserName</th>
+                    <th>Password</th>
+                </tr>
+                <thead>
+                <tbody>
+                    
+                </tbody>
+        </table>
+    </section>
+    <script src="https://kit.fontawesome.com/d191351939.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
