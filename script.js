@@ -115,6 +115,8 @@ login.addEventListener("click", () => {
         details.push(newObject)
         addPeople();
         userInput.value = "";
+        inputValue = "";
+        passwordValue = "";
         password.value = "";
     }else if(!(checkUsername(inputValue)) && checkPassword(passwordValue)){
         invalidU.style.display = "block";
