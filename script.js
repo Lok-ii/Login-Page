@@ -33,6 +33,7 @@ let addPeople = (list = details) => {
 
   // To check the validity of the UserName and Password
 
+let AtoZ = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 let userInput = document.querySelector("#username");
 let password = document.querySelector("#password");
 
@@ -40,7 +41,7 @@ let checkUsername = (f) => {
     let normalChar = 0;
     let numCount = 0;
     let specialCharCount = 0;
-    if(f.charCodeAt(0) <=64 && f.charCodeAt(0) >= 91){
+    if(!(AtoZ.includes(f[0]))){
         return false;
     }
 
