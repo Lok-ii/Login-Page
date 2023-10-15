@@ -1,6 +1,6 @@
 let details = [
     { UserName: "U1$ername", Password: "P@ssw0rd" },
-    { UserName: " L@stUs3rname ", Password: "Secr3t@123" },
+    { UserName: "L@stUs3rname ", Password: "Secr3t@123" },
     { UserName: "G0ld3nUs3r ", Password: "P@$$w0rd123" },
     { UserName: "S@mpl3User", Password: "Qwerty!234"},
     { UserName: "Eclip$3", Password: "MyP@ssw0rd!23" },
@@ -139,8 +139,8 @@ login.addEventListener("click", () => {
     element.addEventListener("click", () => {
       if (element.classList.contains("sortU")) {
         details.sort((a, b) => {
-          let fa = a.UserName.toLowerCase(),
-            fb = b.UserName.toLowerCase();
+          let fa = a.UserName,
+            fb = b.UserName;
   
           if (fa < fb) {
             return -1;
