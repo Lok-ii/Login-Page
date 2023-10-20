@@ -17,7 +17,7 @@ body {
             #7e397a 100%);
     backdrop-filter: blur(5px);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
     font-family: "Montserrat", sans-serif;
 }
@@ -28,6 +28,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    justify-self: center;
+    position: sticky;
+    top: 20%;
 }
 
 .userContent {
@@ -192,7 +195,7 @@ label, .forgot{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 2rem;
 }
 
@@ -265,6 +268,7 @@ table tbody tr:hover{
 
     .userLogin{
         width: 100%;
+        position: static;
     }
 
     .userList{
